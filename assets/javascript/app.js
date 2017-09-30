@@ -5,7 +5,7 @@ $("#start").on("click", stopwatch.start);
 var intervalId;
 var clockRunning = false;
 var stopwatch = {
-  time: 0,
+  time: 60,
 start: function() {
 
     // DONE: Use setInterval to start the count here and set the clock to running.
@@ -24,10 +24,11 @@ start: function() {
  count: function() {
 
     // DONE: increment time by 1, remember we cant use "this" here.
-    stopwatch.time++;
-if(stopwatch <= 60) {
+    stopwatch.time--;
+if(stopwatch <= 0) {
   clearTimeout(timer);
   alert("Time Up!");
+  return false;
 }
     // DONE: Get the current time, pass that into the stopwatch.timeConverter function,
     //       and save the result in a variable.
@@ -143,7 +144,4 @@ window.addEventListener("load", renderQuestion, false);
 
 
 
-//https://www.youtube.com/watch?v=d_UuOVhuCF8
-
-//audio sample for when doves cry
-//https://en.wikipedia.org/wiki/File:When_Doves_Cry_sample.ogg
+//could not get the stopwatch to stop at 60 seconds.
