@@ -1,0 +1,36 @@
+body { 
+/*background: #f3e0fc;*/
+font-family: Arial;
+margin:50px;
+border:25px;
+padding:25px;
+}
+h1 {
+color: white;
+}
+
+p {
+color: white;
+
+}
+
+#display {
+  font-family: monospace;
+  font-size: 25px;
+  color: white;
+}
+
+#test {
+  border: 5px solid #000;
+  padding: 10px 40px 40px 40px;
+  background-color: #ecb7f7;
+  font: #030005;
+
+}
+
+#test_status {
+ border: 5px solid #000;
+  padding: 10px 40px 40px 40px;
+  background-color: #ecb7f7;
+  font: #030005;
+}
